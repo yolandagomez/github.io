@@ -16,9 +16,33 @@ h1.title {
 }
 h1.title:hover {
     background-color: #104AC6;
-    color: white;
     border: white 4px solid;
     opacity: 0.9;
+    border: #104AC6 solid 4px;
+    color: white;
+
+    //*vamos a tener que hacerlo paso por paso para cada h1 y para cada a*//
+}
+a.link-logo:hover {
+    background-color: #104AC6;
+    border: white 4px solid;
+    opacity: 0.9;
+    border: #104AC6 solid 4px;
+    color: white;
+}
+//*a.link-logo:visited {
+    border: black dotted 4px;
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 3rem;
+    padding: 1rem;
+    background-color: white;
+}*//
+a.link-logo{
+    color: black;
+}
+h2 {
+    text-decoration: underline;
 }
 nav ul {
     list-style-type:none;
@@ -55,6 +79,7 @@ a {
     margin-top: 2rem;
     display: flex;
 }
+
 .main-contact {
     font-size: 1.2rem;
     border: none;
@@ -67,6 +92,7 @@ a {
 }
 .main-block {
     width: 60rem;
+    max-width: 700px;
     border: black 0.2rem solid;
     border-radius: 2rem;
     margin: 0 auto;
@@ -76,6 +102,8 @@ a {
 }
 p {
     margin: 2rem;
+    line-height: 1.66;
+    text-align: justify;
 }
 
 .main-picture {
@@ -156,4 +184,48 @@ legend {
     font-size: bold;
     font-weight: 2rem;
 }
+.blog-list {
+    list-style: circle;
+    line-height: 1.4;
+    
 
+}
+.blog-pic {
+    max-width: 500px ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 4rem;
+}
+figure p {
+    text-align: center;
+    margin-top: 0;
+}
+/*.picture-main-blog {
+    margin: 100px 50px;
+    min-width: 360px;
+    flex-basis: 40%;
+    background-image: url(../img/undraw_researching_22gp.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 360px;
+*/
+}
+.main-description-blog {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-align: justify;
+    max-width: 500px; 
+    margin: 0 auto;   
+    //flex-basis: 60%;
+    
+
+}
+.volverInicio{
+    text-align: center;
+    font-size: small;
+}
+.link-blog {
+    color: #5eb8e2;
+}
