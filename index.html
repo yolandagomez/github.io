@@ -2,37 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yolanda Gómez</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://kit.fontawesome.com/a89f46791a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<div class="main-wrapper">
 
-    </nav>
-    <h1 class="title"><a class="link-logo"href="index.html">YOLANDA GÓMEZ</a></h1>   
-<div class="main">
-   <a href="#"><img class="main-picture" src="img/yoli.jpg" alt="yoli"></a> 
-   <p class="main-description">Hi! I'm <strong>Yolanda</strong> and I'm a food engineer <i class="fas fa-carrot"></i> and a web developer <i class="fas fa-desktop"></i> <br><br>
-       This webpage is all about me and the things that I like <i class="fas fa-swimmer"></i></p>
+    <div class="wrapper1">
+
+        <header class="top">
+
+            <h1 class="title"><a class="link-logo"href="index.html">YOLANDA GÓMEZ</a></h1>
+
+        </header>
+<!-- antiguo sandwich
+        <nav class="flex-nav">
+            <div class="toggleNav">
+                <i class="fas fa-bars sandwich"></i>
+            </div>
+            <ul class="nav">
+                <li class="navigation-li"><a class="nav-link" href="#about">ABOUT</a></li>
+                <li class="navigation-li"><a class="nav-link" href="#gallery">MY PROJECTS</a></li>
+                <li class="navigation-li"><a class="nav-link" href="#gallery">BLOG</a></li>
+                <li class="navigation-li"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+-fin antiguo sandwich -->
+
+    <!--nuevo sandwich -->
+    <ul class="menu">
+        <li><a class="menuItem" href="#about">About</a></li>
+        <li><a class="menuItem" href="#gallery">My projects</a></li>
+        <li><a class="menuItem" href="#">Blog</a></li>
+        <li><a class="menuItem" href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+    <!--fin nuevo sandwich -->
+
+    </div>
+    <div class="wrapper2">
+        <div class="hero-description">
+            <div><h1 class="hero-text">Hi! I'm Yolanda ;)</h1>
+            </div>
+        <div><p>and I'm a web developer based in Barcelona.</p>
+        </div>
+        <div class="main-image"><img class="main-image" src="img/yoli.jpg" alt="">
+        </div>    
+    
+        </div>
+
+        
+    </div>
+    <div class="wrapper3" id="about">
+        <div class="h2-about"><h2>About me</h2></div>
+        <div class="about-text">Officially, I'm a web programmer, food scientist and a food auditor. <br>  Unofficially, I'm a public speaker and a clown afficionate.
+            </div>
+            <div class="main-image"><img class="main-image" src="img/YoliBcn2.jpg" alt="">
+            </div>
+    </div>
+    <!--fin del hero-->
+    <div class="wrapper4" id="gallery">
+        <div class="h2-gallery"><h2>My projects</h2>
+        </div>
+
+        <div class="projects-all">
+            <div class="project"><img class="project-img" src="img/contact.jpg" alt="birds">
+            </div>
+            <div class="project"><img class="project-img" src="img/contact.jpg" alt="birds">
+            </div>
+            <div class="project"><img class="project-img" src="img/contact.jpg" alt="birds">
+            </div>
+            <div class="project"><img class="project-img" src="img/contact.jpg" alt="birds">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper5" id="contact">
+
+<!--formulario de contacto-->
+        <div id="container">
+            <h1>&#9826; Keep in Touch &#9826;</h1>
+
+            <form action="#" method="post" id="contact_form">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Your name is" name="name" id="name_input" required>
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Your e-mail is" name="email" id="email_input" required>
+              </div>
+
+                <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Write your message here" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+              </div>
+            </form><!-- // End form -->
+          </div><!-- // End #container -->
+<!--fin de formulario de contacto-->
+
+            </p>
+        </div>
+    </div>
+
 </div>
+
+
+ <script src ="js/scripts.js"></script>
+
 </body>
 <footer>
-   <div class="social">
-    <a href="https://www.facebook.com/YoliGomz" target="_blank"><i class="fab fa-facebook-square"></i></a>
-    <a href="https://www.instagram.com/yvgomez101/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-    <a href="https://www.linkedin.com/in/yolanda-g%C3%B3mez-13b4aa11/" target="_blank"><i class="fab fa-linkedin"></i></a> 
-   </div> 
-</footer>
+    <div class="wrapper6"
+    <button id="myButton"><i class="material-icons">arrow_upward</i></button>
+
+    <div class="social">
+     <a href="https://www.facebook.com/YoliGomz" target="_blank"><i class="fab fa-facebook-square"></i></a>
+     <a href="https://www.instagram.com/yvgomez101/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+     <a href="https://www.linkedin.com/in/yolanda-g%C3%B3mez-13b4aa11/" target="_blank"><i class="fab fa-linkedin"></i></a>
+     <script src="script.js"></script>
+    </div>
+    </div>
+ </footer>
 </html>
